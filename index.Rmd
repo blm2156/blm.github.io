@@ -9,5 +9,10 @@ output:
 
 Hello there! Welcome to my website. 
 
+
+
 # About Me Section 
 You can learn more about me [here](about_me.html)
+
+# LinkedIn
+Connect with me on [LinkedIn](https://www.linkedin.com/in/britneymazzetta/)
