@@ -13,4 +13,4 @@ navbar:
       href: https://github.com/blm2156
 output:
   html_document:
-    theme: cerulean
+    theme: slate
