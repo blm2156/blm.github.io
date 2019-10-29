@@ -17,5 +17,5 @@ You can learn more about me [here](about_me.html)
 # LinkedIn
 Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/britneymazzetta/)
 
-#GitHub
+# GitHub
 Follow other projects that I have been working on on my [GitHub](https://github.com/blm2156)
