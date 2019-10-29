@@ -1,5 +1,5 @@
 ---
-title: "My awesome website"
+title: "Britney Mazzetta's Website"
 output: 
   html_document:
     toc: true
@@ -9,4 +9,3 @@ output:
 
 # This is Britney's awesome website
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
