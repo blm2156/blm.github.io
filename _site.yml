@@ -3,7 +3,7 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About Me"
+    - text: "Academic and Professional Experience"
       href: about_me.html
     - icon: fa-envelope fa-lg
       href: mailto:blm2156@cumc.columbia.edu
