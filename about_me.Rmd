@@ -24,30 +24,6 @@ Bachelor of Arts in **Mathematics** with Honors	Minors in _Economics_, _Finance_
 May 2018
 
 $~$
-
-# Scholarly Presentations
-•	_Predicting U.S. Childhood Obesity through Mathematical Modeling_                        
-
-Presented 5 times including: National Conferences on Undergraduate Research (NCUR), National Conference for Undergraduate Women in Mathematics, Mathematical Association of America National MathFest     
-
-May 2017 - Apr. 2018
-
- $~$
- 
-•	_Research Experience through Summer Scholars Program_, Ithaca College, Ithaca, NY
-
-Presented at H&S Summer Research Exhibition and Humanities & Sciences Department      
-
-Nov. & Oct. 2017
-
- $~$
- 
-•	_Expressing Egyptian Fractions with Hexagonal and Triangular Numbers_
-Ithaca College’s Academic Symposium (May 2015)  &  Mathematical Association of America Section Conference                   
-
-Apr. 2015
-
- $~$
  
 # Professional Experience
 
@@ -55,6 +31,8 @@ Apr. 2015
 Feb. 2019-Current
 
 Maintaining/interpreting large dataset using SAS to identify research questions and conducting relevant analyses for a series of white papers based on recent survey on engaging patients in clinical trials as stakeholders rather than subjects
+
+Performed the described data analysis for [this whitepaper](https://www.antidote.me/partner-not-participant-understanding-the-clinical-trial-decision-making-process-whitepaper?utm_content=101279636&utm_medium=social&utm_source=linkedin&hss_channel=lcp-15078931) titled _Partner, not participant: Understanding the clinical trial decision-making process_ 
 
  $~$
  
@@ -126,6 +104,30 @@ Jan. 2016-May 2017
 
 $~$
 
+# Scholarly Presentations
+•	_Predicting U.S. Childhood Obesity through Mathematical Modeling_                        
+
+Presented 5 times including: National Conferences on Undergraduate Research (NCUR), National Conference for Undergraduate Women in Mathematics, Mathematical Association of America National MathFest     
+
+May 2017 - Apr. 2018
+
+ $~$
+ 
+•	_Research Experience through Summer Scholars Program_, Ithaca College, Ithaca, NY
+
+Presented at H&S Summer Research Exhibition and Humanities & Sciences Department      
+
+Nov. & Oct. 2017
+
+ $~$
+ 
+•	_Expressing Egyptian Fractions with Hexagonal and Triangular Numbers_
+Ithaca College’s Academic Symposium (May 2015)  &  Mathematical Association of America Section Conference                   
+
+Apr. 2015
+
+ $~$
+
 # Additional Experience
 •	_Senior Class Cabinet_, Ithaca College, Ithaca, NY				    
 Aug. 2017-May 2018
@@ -162,6 +164,8 @@ $~$
 $~$ 
 
 # Certificates
-•	Citi Program – certified                         • HIPPA – certified
+•	Citi Program – certified  
+
+• HIPPA – certified
 
 
