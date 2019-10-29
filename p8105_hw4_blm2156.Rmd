@@ -1,0 +1,12 @@
+---
+author: "Britney Mazzetta"
+title: "Homework 4"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+
+---
+
+# This is Britney's awesome website
