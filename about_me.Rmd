@@ -1,5 +1,5 @@
 ---
-title: "About Me"
+title: "Academic and Professional Experience"
 output: 
   html_document:
     toc: true
@@ -7,6 +7,13 @@ output:
     theme: darkly
 ---
 
-# This is Britney's About Me page
+# Education
+**Columbia University** – Mailman School of Public Health (MSPH), New York, NY                                                    
+Master of Public Health in _Epidemiology_
+Certificate in _Applied Biostatistics_
+Expected: May 2020
 
-is this working?
+
+**Ithaca College**, Ithaca, NY			           	
+Bachelor of Arts in **Mathematics** with Honors	Minors in _Economics_, _Finance_, and _Honors Program_
+May 2018
