@@ -4,7 +4,7 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: slate
+    theme: darkly
 ---
 
 Hello there and welcome to my website!
