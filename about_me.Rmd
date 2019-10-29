@@ -15,7 +15,6 @@ Certificate in _Applied Biostatistics_
 
 Expected: May 2020
 
-
 **Ithaca College**, Ithaca, NY			           	
 
 Bachelor of Arts in **Mathematics** with Honors	Minors in _Economics_, _Finance_, and _Honors Program_
@@ -39,4 +38,44 @@ Nov. & Oct. 2017
 Ithaca College’s Academic Symposium (May 2015)  &  Mathematical Association of America Section Conference                   
 
 Apr. 2015
+
+# Professional Experience
+
+•	**Data Analyst Intern**, Antidote Inc., NYC, NY 								         Feb. 2019-Current
+
+Maintaining/interpreting large dataset using SAS to identify research questions and conducting relevant analyses for a series of white papers based on recent survey on engaging patients in clinical trials as stakeholders rather than subjects
+
+•	**Mathematics in Honors Research**, Ithaca College, Ithaca, NY			                                                           		               Aug. 2017-May 2018 
+
+Investigated existing SIR epidemic models to create a model representing childhood obesity in the U.S. 
+
+Applied statistical analysis in numerically forming the parameters based on social and biological                  determinants of health for the model of children in the U.S. 
+
+
+•	**Mathematics Capstone**, Ithaca College, Ithaca, NY		                         	                                                                Aug. 2017-May 2018 
+
+Explored epidemiological mathematics of infectious diseases by predicting interactions of people                                and diseases through varying epidemic, endemic, and herd immunity models 
+
+Connected newly learned research to mathematics learned in previous coursework
+
+
+•	**Humanities and Sciences Summer Scholars Research Program**, Ithaca College, Ithaca, NY                                       		     
+
+May 2017-Aug. 2017
+
+Accepted into prestigious, 20-person, paid, 8-week, independent research program
+
+Developed major ideas and fundamentals for the continued research of mathematical modeling in                                 U.S. childhood obesity as part of Mathematics in Honors Research
+
+•	**Grader for the Mathematics Department**, Ithaca College, Ithaca, NY                	                                    		               
+Aug. 2016-May 2018
+
+•	**Research in Number Theory**, Ithaca College, Ithaca, NY			        
+
+Oct. 2014-May 2015 
+
+•	**Pool Manager**, Holland Municipal, Milford, NJ		    	              
+
+Summers 2013-2016, 2018
+
 
