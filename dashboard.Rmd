@@ -22,17 +22,30 @@ set.seed(1)
 instacart = instacart %>%
   sample_n(5000)
 
+# Scatterplot
 instacart%>%
   mutate(text_label = str_c("Order Hour of the Day: ", order_hour_of_day)) %>%
   plot_ly(
     x = ~product_name, y = ~order_dow, type = "scatter", mode = "markers", color = ~order_hour_of_day, text = ~text_label, alpha = 0.5
   )
-
-
+```
+```{r}
+#Barplot
 instacart%>%
   mutate(text_label = str_c("Order Hour of the Day: ", order_hour_of_day)) %>%
   plot_ly(
     x = ~product_name, y = ~order_dow, type = "bar", mode = "markers", color = ~order_hour_of_day, text = ~text_label, alpha = 0.5
+  )
+```
+
+
+```{r}
+#Barplot w/ order
+instacart%>%
+  count(aisle) %>%
+  mutate(aisle = fct_reorder(aisle, n)) %>%
+  plot_ly(
+    x = ~aisle, y = ~n, type = "bar", color = ~aisle
   )
 ```
 
