@@ -32,7 +32,9 @@ Feb. 2019-Current
 
 Maintaining/interpreting large dataset using SAS to identify research questions and conducting relevant analyses for a series of white papers based on recent survey on engaging patients in clinical trials as stakeholders rather than subjects
 
-Performed the described data analysis for [this whitepaper](https://www.antidote.me/partner-not-participant-understanding-the-clinical-trial-decision-making-process-whitepaper?utm_content=101279636&utm_medium=social&utm_source=linkedin&hss_channel=lcp-15078931) titled _Partner, not participant: Understanding the clinical trial decision-making process_ 
+Performed the described data analysis for this whitepaper: [Partner, not participant: Understanding the clinical trial decision-making process](https://www.antidote.me/partner-not-participant-understanding-the-clinical-trial-decision-making-process-whitepaper?utm_content=101279636&utm_medium=social&utm_source=linkedin&hss_channel=lcp-15078931)
+
+Performed the described data analysis for this whitepaper: [Patients Have a Type: How preferences for clinical trial type vary by race and condition area](https://www.antidote.me/patients-have-a-type)
 
  $~$
  
