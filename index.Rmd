@@ -31,4 +31,6 @@ $~$
 
 $~$
  
-You can learn more about me [here](about_me.html)
+You can learn more about my professional and education experiences [here](about_me.html).
+
+You can view some plots that I have created using R [here](dashboard.html).
