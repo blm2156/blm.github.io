@@ -1,5 +1,5 @@
 ---
-title: "dashboard"
+title: "Flexdashboard"
 output:
   html_document:
     toc: true
@@ -7,7 +7,7 @@ output:
     theme: darkly
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, message = FALSE, warning = FALSE}
 library(flexdashboard)
 library(tidyverse)
 library(viridis)
@@ -16,41 +16,45 @@ library(plotly)
 data("instacart")
 ```
 
-```{r, echo = FALSE}
+# Count of Days Since Last Order for Customers
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
 set.seed(1)
 
 instacart = instacart %>%
   sample_n(4000)
 
-# Scatterplot
-instacart%>%
-  mutate(text_label = str_c("Order Hour of the Day: ", order_hour_of_day)) %>%
+instacart %>%
+  count(days_since_prior_order, sort = TRUE) %>%
   plot_ly(
-    x = ~product_name, y = ~order_dow, type = "scatter", mode = "markers", color = ~order_hour_of_day, text = ~text_label, alpha = 0.5
-  )
+    x = ~days_since_prior_order, y = ~n, type = "scatter", mode = "markers",
+    color = ~n, alpha = 0.5) %>%
+    layout(
+    title = "Count of Days Since Last Order for Customers",
+    xaxis = list(title = "Days Since Prior Order"),
+      yaxis = list(title = "Frequency")
+    )
 ```
-```{r, echo = FALSE}
+
+# Top 20 Products Ordered  and Their Corresponding Frequencies
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
 #Barplot
 instacart%>%
   count(product_name) %>%
   top_n(20) %>%
   mutate(product_name = fct_reorder(product_name, n)) %>%
-  plot_ly(x = ~product_name, y = ~n, color = ~product_name, type = "bar")
+  plot_ly(x = ~product_name, y = ~n, color = ~product_name, type = "bar") %>%
+    layout(
+    title = "Top 20 Products Ordered  and \nTheir Corresponding Frequencies",
+    xaxis = list(title = "Product Name"),
+      yaxis = list(title = "Frequency")
+    )
 ```
 
 
-#Barplot w/ order
-```{r, echo = FALSE}
-instacart%>%
-  count(department) %>%
-  mutate(department = fct_reorder(department, n)) %>%
-  plot_ly(
-    x = ~department, y = ~n, type = "bar", color = ~department
-  )
-```
 
 # Top 15 Aisles Ordered from and Their Corresponding Day of the Week
-```{r, echo = FALSE}
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
 instacart_new = 
   instacart%>%
   count(aisle, sort = TRUE) %>%
