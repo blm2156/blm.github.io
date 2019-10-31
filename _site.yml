@@ -5,7 +5,7 @@ navbar:
   right:
     - text: "Academic and Professional Experience"
       href: about_me.html
-    - text: "Plotly"
+    - text: "Flexdashboard"
       href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:blm2156@cumc.columbia.edu
