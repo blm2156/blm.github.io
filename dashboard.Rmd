@@ -20,7 +20,7 @@ data("instacart")
 set.seed(1)
 
 instacart = instacart %>%
-  sample_n(5000)
+  sample_n(4000)
 
 # Scatterplot
 instacart%>%
@@ -47,5 +47,43 @@ instacart%>%
   plot_ly(
     x = ~aisle, y = ~n, type = "bar", color = ~aisle
   )
+```
+#Barplot w/ order
+```{r}
+instacart%>%
+  count(department) %>%
+  mutate(department = fct_reorder(department, n)) %>%
+  plot_ly(
+    x = ~department, y = ~n, type = "bar", color = ~department
+  )
+
+
+
+instacart%>%
+  count(department) %>%
+  mutate(department = fct_reorder(department, n)) %>%
+  plot_ly(
+    x = ~department, y = ~n, type = "box", color = ~department
+  )
+```
+
+# Top 15 Aisle Ordered from and Their Corresponding Day of the Week
+```{r}
+instacart_new = 
+  instacart%>%
+  count(aisle, sort = TRUE) %>%
+  top_n(15) %>%
+  select(aisle)
+
+inner_join(instacart, instacart_new, by = "aisle") %>%
+  mutate(aisle = fct_reorder(aisle, order_dow)) %>%
+  plot_ly(y = ~order_dow, color = ~aisle, type = "box"
+  ) %>%
+  layout(
+    title = "Top 15 Aisle Ordered from and \nTheir Corresponding Day of the Week",
+    xaxis = list(title = "Aisle Name"),
+      yaxis = list(title = "Day of Week")
+    )
+
 ```
 
