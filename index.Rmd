@@ -9,7 +9,10 @@ output:
 
 Hello there and welcome to my website!
 
-My name is Britney. 
+![](PFZ_0420.JPG)
 
-# About Me Section 
+My name is Britney. I am currently finishing my second (and final) year of graduate school where I am working towards earning my Master of Public Health in Epidemiology with a certificate in Applied Biostatistics. Originally, I am from a small river town in Central-West NJ. I also have dog named Luna (featured in the photo).
+
+
+![](IMG_9133.JPG)
 You can learn more about me [here](about_me.html)
