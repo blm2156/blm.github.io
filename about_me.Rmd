@@ -27,6 +27,20 @@ $~$
  
 # Professional Experience
 
+•	**Global Real World Data - Strategy, Analytics, and Insights**, Pfizer, Inc., NYC, NY 		
+
+Jun. 2019-Current
+
+$~$
+
+•	**Graduate Teaching Assistant**, Columbia University - Mailman School of Public Health, NYC, NY 		
+
+Feb. 2019-Current
+
+Teaching assistant for graduate-level Quantitative Research Methods module, within the Columbia University Mailman School of Public Health's CORE Curriculum for all first-year MPH students
+
+$~$
+ 
 •	**Data Analyst Intern**, Antidote Inc., NYC, NY 								         
 Feb. 2019-Current
 
@@ -151,7 +165,9 @@ $~$
 # Skills
 •	E-Views, Statistical Program 
 
-• LaTeX – Proficient
+• GitHub
+
+• LaTeX
 
 • Microsoft Office (Including Access)
 

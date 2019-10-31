@@ -1,13 +1,13 @@
 ---
-title: "Flexdashboard"
-output:
-  html_document:
-    toc: true
-    toc_float: true
-    theme: darkly
+title: "Instacart Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
-```{r setup, include=FALSE, message = FALSE, warning = FALSE}
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE)
 library(flexdashboard)
 library(tidyverse)
 library(viridis)
@@ -16,50 +16,47 @@ library(plotly)
 data("instacart")
 ```
 
-# Count of Days Since Last Order for Customers
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
-set.seed(1)
+Column {data-width=650}
+-----------------------------------------------------------------------
 
-instacart = instacart %>%
-  sample_n(4000)
+### Chart A
 
-instacart %>%
+```{r}
+plot_1=
+  instacart %>%
   count(days_since_prior_order, sort = TRUE) %>%
   plot_ly(
     x = ~days_since_prior_order, y = ~n, type = "scatter", mode = "markers",
     color = ~n, alpha = 0.5) %>%
-    layout(
+  layout(
     title = "Count of Days Since Last Order for Customers",
     xaxis = list(title = "Days Since Prior Order"),
-      yaxis = list(title = "Frequency")
-    )
+    yaxis = list(title = "Frequency")
+  )
+plot_1
 ```
 
-Something interesting to note with this plot is that most people will reorder at the 1 week point; however, we have an outlier at 30 days. This is because the dataset stopped collecting data after 30 days. This could be due to many people not reordering after their first order and they were automatically lumped into the "30 day" category. 
- 
- $~$
- 
-# Top 20 Products Ordered  and Their Corresponding Frequencies
+Column {data-width=350}
+-----------------------------------------------------------------------
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
-#Barplot
+### Chart B
+
+```{r, message=FALSE, warning=FALSE}
 instacart%>%
   count(product_name) %>%
-  top_n(20) %>%
+  top_n(10) %>%
   mutate(product_name = fct_reorder(product_name, n)) %>%
   plot_ly(x = ~product_name, y = ~n, color = ~product_name, type = "bar") %>%
-    layout(
-    title = "Top 20 Products Ordered  and \nTheir Corresponding Frequencies",
+  layout(
+    title = "Top 10 Products Ordered  and \nTheir Corresponding Frequencies",
     xaxis = list(title = "Product Name"),
-      yaxis = list(title = "Frequency")
-    )
+    yaxis = list(title = "Frequency")
+  )
 ```
-Something interesting to note with this plot is that the top 20 products are all produce. Bananas, both fresh and bagged, is significantly the most ordered item.
 
- $~$
- 
-# Top 15 Aisles Ordered from and Their Corresponding Day of the Week
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
+### Chart C
+
+```{r, message=FALSE, warning=FALSE}
 instacart_new = 
   instacart%>%
   count(aisle, sort = TRUE) %>%
@@ -75,7 +72,5 @@ inner_join(instacart, instacart_new, by = "aisle") %>%
     xaxis = list(title = "Aisle Name"),
       yaxis = list(title = "Day of Week")
     )
-
 ```
 
-Something interesting to note with this plot (although we do not know which day each number corresponds to with the variable information provided), we see that more frozen meals or prepared meals are ordered near the end of the week, while fresher produce and dairy are ordered more near the beginning of the week.
