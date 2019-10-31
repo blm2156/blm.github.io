@@ -9,10 +9,26 @@ output:
 
 Hello there and welcome to my website!
 
+$~$
+ 
 ![](PFZ_0420.JPG)
 
-My name is Britney. I am currently finishing my second (and final) year of graduate school where I am working towards earning my Master of Public Health in Epidemiology with a certificate in Applied Biostatistics. Originally, I am from a small river town in Central-West NJ. I also have dog named Luna (featured in the photo).
+$~$
+ 
+My name is Britney. I am currently finishing my second (and final) year of graduate school where I am working towards earning my Master of Public Health in Epidemiology with a certificate in Applied Biostatistics. I am going on my second year living in NYC and have absolutlely loved it. The view from my apartment isn't so bad either.
 
+$~$
+ 
+![](IMG_9343.JPG)
 
+$~$
+ 
+Originally, I am from a small river town in Central-West NJ. I also have dog named Luna (featured in the photo). I love the outdoors, love to explore, and love to stay active and busy.
+
+$~$
+ 
 ![](IMG_9133.JPG)
+
+$~$
+ 
 You can learn more about me [here](about_me.html)
