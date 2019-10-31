@@ -35,6 +35,10 @@ instacart %>%
     )
 ```
 
+Something interesting to note with this plot is that most people will reorder at the 1 week point; however, we have an outlier at 30 days. This is because the dataset stopped collecting data after 30 days. This could be due to many people not reordering after their first order and they were automatically lumped into the "30 day" category. 
+ 
+ $~$
+ 
 # Top 20 Products Ordered  and Their Corresponding Frequencies
 
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
@@ -50,9 +54,10 @@ instacart%>%
       yaxis = list(title = "Frequency")
     )
 ```
+Something interesting to note with this plot is that the top 20 products are all produce. Bananas, both fresh and bagged, is significantly the most ordered item.
 
-
-
+ $~$
+ 
 # Top 15 Aisles Ordered from and Their Corresponding Day of the Week
 ```{r, echo = FALSE, message = FALSE, warning = FALSE}
 instacart_new = 
@@ -73,3 +78,4 @@ inner_join(instacart, instacart_new, by = "aisle") %>%
 
 ```
 
+Something interesting to note with this plot (although we do not know which day each number corresponds to with the variable information provided), we see that more frozen meals or prepared meals are ordered near the end of the week, while fresher produce and dairy are ordered more near the beginning of the week.
