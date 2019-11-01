@@ -16,45 +16,10 @@ library(plotly)
 data("instacart")
 ```
 
-Column {data-width=650}
+Column {data-width=550}
 -----------------------------------------------------------------------
 
 ### Chart A
-
-```{r}
-plot_1=
-  instacart %>%
-  count(days_since_prior_order, sort = TRUE) %>%
-  plot_ly(
-    x = ~days_since_prior_order, y = ~n, type = "scatter", mode = "markers",
-    color = ~n, alpha = 0.5) %>%
-  layout(
-    title = "Count of Days Since Last Order for Customers",
-    xaxis = list(title = "Days Since Prior Order"),
-    yaxis = list(title = "Frequency")
-  )
-plot_1
-```
-
-Column {data-width=350}
------------------------------------------------------------------------
-
-### Chart B
-
-```{r, message=FALSE, warning=FALSE}
-instacart%>%
-  count(product_name) %>%
-  top_n(10) %>%
-  mutate(product_name = fct_reorder(product_name, n)) %>%
-  plot_ly(x = ~product_name, y = ~n, color = ~product_name, type = "bar") %>%
-  layout(
-    title = "Top 10 Products Ordered  and \nTheir Corresponding Frequencies",
-    xaxis = list(title = "Product Name"),
-    yaxis = list(title = "Frequency")
-  )
-```
-
-### Chart C
 
 ```{r, message=FALSE, warning=FALSE}
 instacart_new = 
@@ -73,4 +38,40 @@ inner_join(instacart, instacart_new, by = "aisle") %>%
       yaxis = list(title = "Day of Week")
     )
 ```
+
+
+Column {data-width=450}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r, message=FALSE, warning=FALSE}
+instacart%>%
+  count(product_name) %>%
+  top_n(10) %>%
+  mutate(product_name = fct_reorder(product_name, n)) %>%
+  plot_ly(x = ~product_name, y = ~n, color = ~product_name, type = "bar") %>%
+  layout(
+    title = "Top 10 Products Ordered  and \nTheir Corresponding Frequencies",
+    xaxis = list(title = "Product Name"),
+    yaxis = list(title = "Frequency")
+  )
+```
+
+### Chart C
+```{r}
+plot_1=
+  instacart %>%
+  count(days_since_prior_order, sort = TRUE) %>%
+  plot_ly(
+    x = ~days_since_prior_order, y = ~n, type = "scatter", mode = "markers",
+    color = ~n, alpha = 0.5) %>%
+  layout(
+    title = "Count of Days Since Last Order for Customers",
+    xaxis = list(title = "Days Since Prior Order"),
+    yaxis = list(title = "Frequency")
+  )
+plot_1
+```
+
 
